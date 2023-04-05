@@ -1,0 +1,168 @@
+
+
+.footersection {
+    & .innersection {
+        & .topLogoSection {
+            border-bottom: 1px solid rgba($white, 0.5);
+            & .logo {
+                height: 31px;
+            }
+        }
+        & .mainLinkinBox {
+            & .textaContent {
+            }
+            & .inputGroup {
+                & .form-control {
+                    border: 1px solid $theme1;
+                &:focus{
+                    border-color: $theme1;
+                }
+                }
+            }
+            & .footer_box {
+                & .inner_heading {
+                    & span {
+                        padding-left: 10px;
+                        position: relative;
+                        &::before {
+                        content: "";
+                        width: 4px;
+                        height: 20px;
+                        background: $theme1;
+                        position: absolute;
+                        left: 0px;
+                        top: 50%;
+                        transform: translate(-0%, -50%);
+                        transition: all ease-in-out .3s;
+                        }
+                    }
+                }
+                & .contectDetails {
+                    transition: all 0.3s;
+                    &:hover {
+                        color: $theme1 !important;
+                    }
+                }
+                & .links_footer {
+                    & li {
+                        & a {
+                            padding-left: 10px;
+                            transition: all ease-in-out 0.3s;
+                            position: relative;
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                top: 50%;
+                                left: 0px;
+                                width: 10px;
+                                transform: translate(0%, -50%);
+                                height: 2px;
+                                background: $white;
+                                opacity: 0;
+                                transition: all ease-in-out 0.3s;
+                            }
+                            &::after {
+                                content: '';
+                                width: 6px;
+                                height: 6px;
+                                border-radius: 50px;
+                                position: absolute;
+                                background-color: transparent;
+                                left: 0px;
+                                top: 50%;
+                                transform: translate(0%, -50%);
+                                transition: all ease-in-out 0.3s;
+                            }
+                            &:hover {
+                                color: $theme2 !important;
+                                transform: translateX(10px);
+                                &:before {
+                                    opacity: 1;
+                                    left: -10px;
+                                }
+                                &::after{
+                                    opacity: 1;
+                                    background-color: $theme2;
+                                }
+                            }
+                        }
+                    }
+                }
+                & .subscribeinput  {
+                    & .form-control {
+                        border-bottom: 2px solid $white !important;
+                    }
+                }
+            }
+            
+            & .social_icon {
+                & .socillinkfooter {
+                    & li {
+                        & a {
+                            width: 30px;
+                            height: 30px;
+                            transition: all ease-in-out 0.3s;
+                            & img {
+                                transition: all ease-in-out 0.3s;
+                            }
+                            &:hover {
+                                & img {
+                                    transform: scale(1.1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .uptoTopBtn{
+                top: 0rem;
+                right: 13px;
+                & a {
+                    width: 40px;
+                    height: 40px;
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767.98px) {
+    .footersection {
+    & .innersection {
+        & .mainLinkinBox {
+            & .uptoTopBtn{
+                & a {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+    .footersection {
+    & .innersection {
+        & .mainLinkinBox {
+            & .uptoTopBtn{
+                top: 100%;
+                & a {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            & .social_icon {
+                & .socillinkfooter {
+                    & li {
+                        & a {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+}

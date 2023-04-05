@@ -1,0 +1,228 @@
+.navbar {
+    z-index: 100;
+    background-color: #f7f3f0;
+
+    & .navbar-brand {
+        height: 45px;
+    }
+    .icone_list {
+        cursor: pointer;
+        // filter: invert(1);
+        transition: all ease-in-out 0.3s;
+        width: 28px;
+
+    }
+    & .navbar-nav {
+        & .nav-item {
+            & .nav-link {
+                transition: all ease-in-out .3s;
+                &:hover {
+                    color: $theme2 !important;
+                    &.dropdown-toggle {
+                        &::after{
+                            filter: brightness(1) !important;
+                        }
+                    }
+                }
+                // &.active{
+                //     color: $theme2 !important;
+                // }
+            }
+            &.dropdown {
+                & .dropdown-toggle {
+                    &::after{
+                        background-image: url(../img/icon/downArow.svg);
+                        height: 10px;
+                        width: 14px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        border: 0px;
+                        vertical-align: unset;
+                        filter: brightness(0);
+                        transition: all ease-in-out .3s;
+                    }
+                }
+                & .dropdown-menu {
+                    & .dropdown-item {
+                        transition: all 0.3s;
+                        &:hover{
+                            color: $theme2 !important;
+                        }
+                        &:active{
+                            color: $theme2 !important;
+                            background-color: $theme1 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.sectionNav {
+        z-index: 2;
+        & .navbar-brand {
+            height: 35px;
+        }
+        & .navbar-nav {
+            & .nav-item {
+                & .nav-link {
+                    &:hover {
+                        color: $theme1 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767.98px) {
+    .navbar{
+        & .navbar-brand {
+            height: 40px;
+        }
+        &.sectionNav {
+            & .navbar-brand {
+                height: 30px;
+            }
+            & .navbar-nav {
+                & .nav-item {
+                    & .nav-link {
+                        font-size: 10px;
+                        padding: 4px;
+                    }
+                }
+            }
+            & .createBtn {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.userAcount {
+    & .inneruser {
+        & .user {
+            transition: all ease-in-out .3s;
+            & img {
+                transition: all ease-in-out .3s;
+                width: 22px;
+            }
+            &:hover{
+                & img {
+                    filter: brightness(1000);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.tag_title {
+    letter-spacing: 0.1rem;
+}
+
+.headerOffcanvas {
+    width: 280px !important;
+    & .offcanvas-header {
+        & .offcanvas-title {
+            height: 25px;
+            display: flex;
+        }
+        & .closeBtn {
+            width: 20px;
+        }
+    }
+    &.offcanvas-top {
+        width: 100% !important;
+        min-height: 40% !important;
+    }
+}
+
+.tag_list {
+    & li {
+        transition: all 0.3s;
+        & .navlist {
+            transition: all 0.3s;
+            position: relative;
+            text-decoration: none;
+
+        }
+        &:hover {
+            & .navlist {
+                color: $theme2 !important;
+                &.dropdown-toggle {
+                    &::after{
+                        filter: brightness(1) !important;
+                    }
+                }
+            }
+        }
+        &.dropdown {
+            & .dropdown-toggle {
+                &::after{
+                    background-image: url(../img/icon/downArow.svg);
+                    height: 7px;
+                    width: 14px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    border: 0px;
+                    vertical-align: unset;
+                    filter: brightness(0);
+                    transition: all ease-in-out .3s;
+                }
+            }
+            & .dropdown-menu {
+                position: static !important;
+                transform: unset !important;
+                & .dropdown-item {
+                    transition: all 0.3s;
+                    &:hover{
+                        color: $theme2 !important;
+                    }
+                    &:active{
+                        color: $theme2 !important;
+                        background-color: $theme1 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+.navbar{
+    transition: all 0.3s ease-in-out;
+
+}
+.nav-active {
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 15%) !important;
+    background:  rgba($black, 0.7) !important;
+    transition: all 1s !important;
+    transition: all 0.3s ease-in-out;
+    & .icone_list {
+        & img {
+            filter: brightness(100);
+        }
+    }
+
+}
+
+.always-nav-active {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.247) !important;
+    background:  rgba($black, 0.7) !important;
+    transition: all 0.3s ease-in-out;
+
+    & .navbar-brand{
+        background-color: $white !important;
+        color: $black !important;
+    
+        }
+        // & .icone_list {
+        //     cursor: pointer;
+        //     filter: invert(1) !important;
+        
+        // }
+}
+
