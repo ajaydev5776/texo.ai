@@ -57,8 +57,41 @@
     <!-- Preloader -->
     <!-- <div class="page-loader"><div class="spinner"></div></div> -->
     <!-- include Header -->
-    <div include-html="layout/header.html" id="header_file"></div>
-    
+    <!-- <div include-html="layout/header.html" id="header_file"></div> -->
+    <!-- *header -->
+    <nav class="navbar navbar-expand-md  position-fixed w-100 bgtransparent py-md-3 py-2 top-0">
+        <div class="container">
+            <a class="navbar-brand fw-medium" href="index.html"><img src="assets/img/header/logo.png" alt="Logo" class="w-100 h-100"></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-md-auto msauto align-items-center gap-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle position-relative fs-14 fw-semibold text-black" href="javascript:;" role="button" data-bs-toggle="dropdown" aria-expanded="false">Features</a>
+                        <ul class="dropdown-menu overflow-hidden p-0">
+                            <li><a class="dropdown-item fs-13 fw-semibold" href="javascript:;">Action</a></li>
+                            <li><a class="dropdown-item fs-13 fw-semibold" href="javascript:;">Another action</a></li>
+                            <li><a class="dropdown-item fs-13 fw-semibold" href="javascript:;">Something else here</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link position-relative fs-14 fw-semibold text-black" aria-current="page" href="javascript:;">Integrations</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle position-relative fs-14 fw-semibold text-black" href="javascript:;" role="button" data-bs-toggle="dropdown" aria-expanded="false">Company</a>
+                        <ul class="dropdown-menu overflow-hidden p-0">
+                            <li><a class="dropdown-item fs-13 fw-semibold" href="javascript:;">Action</a></li>
+                            <li><a class="dropdown-item fs-13 fw-semibold" href="javascript:;">Another action</a></li>
+                            <li><a class="dropdown-item fs-13 fw-semibold" href="javascript:;">Something else here</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link position-relative fs-14 fw-semibold text-black" href="javascript:;">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <div class="text-center "><a href="javascript:;" class="btn btn-theme2 text-decoration-none fw-semibold rounded-0 btn-lg fs-14">Sign Up</a></div>
+                <div class="icone_list d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/img/icon/menu_icon.svg" class="w-100" alt=""></div>
+            </div>
+        </div>
+        </nav>
+    <!-- *Header End -->
+
     <!--* Hero Section -->
     <div class="container-fluid heroSection mb-md-5">
         <div class="container innersection">
@@ -610,39 +643,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- <div class="col-12 fs-11 lh-120">Choose topic</div>
-                                            <div class="col-12">
-                                                <div class="row mx-0 align-items-center rounded-pill chooseTopicTabs border-0">
-                                                    <div class="col topicTab d-flex align-items-center justify-content-center rounded-pill p-2"><span></span></div>
-                                                    <div class="col topicTab active d-flex align-items-center justify-content-center rounded-pill p-2"><span></span></div>
-                                                    <div class="col topicTab d-flex align-items-center justify-content-center rounded-pill p-2"><span></span></div>
-                                                    <div class="col topicTab d-flex align-items-center justify-content-center rounded-pill p-2"><span></span></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="row mx-0 align-items-start">
-                                                    <div class="col placeholder-wave">
-                                                        <div class=" fs-11 lh-120">Select lenth</div>
-                                                        <div class="placeholder placeholder-xs rounded-pill opacity-25 col-10"></div>
-                                                        <div class="placeholder placeholder-xs rounded-pill opacity-25 col-5"></div>
-                                                    </div>
-                                                    <div class="col-4 chooseTopicTabs p-0 rounded-pill">
-                                                        <div class="topicTab active d-flex align-items-center justify-content-center rounded-pill p-2"><span></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="row mx-0 align-items-start">
-                                                    <div class="col placeholder-wave">
-                                                        <div class=" fs-11 lh-120">Select lenth</div>
-                                                        <div class="placeholder placeholder-xs rounded-pill opacity-25 col-10"></div>
-                                                        <div class="placeholder placeholder-xs rounded-pill opacity-25 col-5"></div>
-                                                    </div>
-                                                    <div class="col-4 chooseTopicTabs p-0 rounded-pill">
-                                                        <div class="topicTab active d-flex align-items-center justify-content-center rounded-pill p-2"><span></span></div>
-                                                    </div>
-                                                </div>
-                                            </div> -->
                                         </div>
                                     </div>
                                     <div class="col-12 feedbackCard aiCard methodAi ms-n4 position-absolute">
@@ -1187,11 +1187,39 @@
         </div>
     </div>
 
+    <!--* Heder Offcanvas -->
+    <div class="offcanvas headerOffcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header bg-theme2">
+            <h5 class="offcanvas-title fw-semibold tag_title" id="offcanvasRightLabel"><img src="assets/img/header/logo.png" alt="Logo" class="h-100"></h5>
+            <button type="button" class="closeBtn bg-transparent p-0 shadow-none border-0" data-bs-dismiss="offcanvas"
+                aria-label="Close"><img src="assets/img/header/close.svg" alt="" class="w-100"></button>
+        </div>
+        <div class="offcanvas-body ps-4">
+            <ul class="list-unstyled  tag_list">
+                <li class="pb-2 dropdown">
+                    <a class="dropdown-toggle navlist fs-14 fw-semibold text-black" href="javascript:;" role="button" data-bs-toggle="dropdown" aria-expanded="false">Features</a>
+                    <ul class="dropdown-menu overflow-hidden p-0">
+                        <li><a class="dropdown-item fs-12 fw-semibold" href="javascript:;">Action</a></li>
+                        <li><a class="dropdown-item fs-12 fw-semibold" href="javascript:;">Another action</a></li>
+                        <li><a class="dropdown-item fs-12 fw-semibold" href="javascript:;">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="pb-2"><a class="navlist fs-14 fw-semibold text-black" aria-current="page" href="javascript:;">Integrations</a></li>
+                <li class="pb-2 dropdown">
+                    <a class="dropdown-toggle navlist fs-14 fw-semibold text-black" href="javascript:;" role="button" data-bs-toggle="dropdown" aria-expanded="false">Company</a>
+                    <ul class="dropdown-menu overflow-hidden p-0">
+                        <li><a class="dropdown-item fs-12 fw-semibold" href="javascript:;">Action</a></li>
+                        <li><a class="dropdown-item fs-12 fw-semibold" href="javascript:;">Another action</a></li>
+                        <li><a class="dropdown-item fs-12 fw-semibold" href="javascript:;">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="pb-2"><a class="navlist fs-14 fw-semibold text-black" href="javascript:;">Pricing</a></li>
+            </ul>
+        </div>
+    </div>
+
     
     <!-- Include Footer -->
-    <script src="assets/libs/include/jquery-3.6.0.min.js"></script>
-    <div include-html="layout/footer.html" id="footer_file"></div>
-    <script src="assets/libs/include/include-html.min.js"></script>
     <!-- Bootstrap Js -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Owl Crousel Js -->
