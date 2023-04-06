@@ -12,12 +12,12 @@
     <meta name="revisit-after" content="3 days">
     <meta name="copyright" content="Site Name">
     <meta name="language" content="English">
-    <meta name="reply-to" content="info@imgglobalinfotech.com">
+    <meta name="reply-to" content="">
     <meta name="distribution" content="Global" />
     <meta name="rating" content="General" />
     <!-- Twitter Meta -->
-    <meta name="twitter:site" content="@miradontsoa">
-    <meta name="twitter:creator" content="@miradontsoa">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
     <meta name="twitter:card" content="summary">
     <!-- Facebook Meta -->
     <meta property="fb:app_id" content="0" />
@@ -54,10 +54,6 @@
 </head>
 
 <body class="overflowhidden">
-    <!-- Preloader -->
-    <!-- <div class="page-loader"><div class="spinner"></div></div> -->
-    <!-- include Header -->
-    <!-- <div include-html="layout/header.html" id="header_file"></div> -->
     <!-- *header -->
     <nav class="navbar navbar-expand-md  position-fixed w-100 bgtransparent py-md-3 py-2 top-0">
         <div class="container">
@@ -1220,13 +1216,57 @@
 
     
     <!-- Include Footer -->
+    <script src="assets/libs/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap Js -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Owl Crousel Js -->
     <script src="assets/libs/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
     <!-- Custom Js -->
     <!-- <script src="assets/js/index.min.js"></script> -->
-
+    <script>
+    $('.owl-user').owlCarousel({
+        loop: false,
+        items: 6,
+        margin: 20,
+        nav: true,
+        dots: false,
+        // autoplay: true,
+        freeDrag: false,
+        lazyLoad: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        smartSpeed: 1200,
+        responsiveClass: true,
+        navigation: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false
+            },
+            500: {
+                items: 1,
+                nav: false
+            },
+            576: {
+                items: 2,
+                nav: false
+            },
+            768: {
+                items: 2,
+                nav: true
+            },
+            991: {
+                items: 3,
+                nav: true
+            },
+            1499: {
+                items: 3,
+                nav: true
+            }
+        },
+        navigationText: ["<img src='./assets/img/icon/leftArroe.svg'>","<img src='./assets/img/icon/rightArrow.svg'>"]
+    });
+    </script>
     
 </body>
 </html>

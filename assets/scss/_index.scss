@@ -144,6 +144,7 @@
                 justify-content: end;
                 gap: 10px;
             & .owl-prev , & .owl-next{
+                font-size: 25px;
                 border: 2px solid transparent;
                 background-color: $theme2;
                 width: 40px;
