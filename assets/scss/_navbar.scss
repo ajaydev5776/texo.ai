@@ -48,6 +48,7 @@
                         transition: all 0.3s;
                         &:hover{
                             color: $theme2 !important;
+                            background-color: $theme1;
                         }
                         &:active{
                             color: $theme2 !important;
@@ -181,6 +182,7 @@
                     transition: all 0.3s;
                     &:hover{
                         color: $theme2 !important;
+                        background-color: $theme1;
                     }
                     &:active{
                         color: $theme2 !important;
